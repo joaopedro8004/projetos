@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-img {
+    height: 69vh;
+    width: 100vw;
+    position: relative;
+    object-fit: cover;
+}
+
+#info-main{
+    position: absolute;
+    font-size: 38px;
+    top: 70px;
+    left: 150px;
+    
+}
+
+#info{
+    position: absolute;
+    font-size: 28px ;
+    top: 280px;
+    left: 150px;
+}
+
+.flex {
+    display: flex;
+}
+
+.abouts{
+    flex-direction: row;
+
+}
+
+.about{
+    
+    width: 25vw;
+    height: 30vh;
+    color: white;
+    background-color: blue;
+    border: solid,#000;
+}

@@ -1,6 +1,6 @@
-*{
-    margin: 0px;
-    padding: 0px;
+body{
+    margin: 0;
+    padding: 0;
 }
 
 .main-img {
@@ -8,6 +8,7 @@
     width: 100vw;
     position: relative;
     object-fit: cover;
+    margin-bottom: -5px;
 }
 
 .seilabla {
@@ -36,15 +37,15 @@
 .abouts{
     flex-direction: row;
     width: 100vw;
-    height: 29vh;
+    height: 30vh;
 }
 
 .about{
     padding: 15px;
     width: 25vw;
     color: white;
-    background-color: blue;
-    border: solid,#000;
+    background: rgb(9,9,112);
+    background: linear-gradient(90deg, rgba(9,9,112,1) 0%, rgba(9,9,121,1) 25%, rgba(9,9,144,1) 100%);
 }
 
 

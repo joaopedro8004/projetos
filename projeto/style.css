@@ -4,10 +4,14 @@
 }
 
 .main-img {
-    height: 69vh;
+    height: 70vh;
     width: 100vw;
     position: relative;
     object-fit: cover;
+}
+
+.seilabla {
+    margin: 0px;
 }
 
 #info-main{
@@ -31,14 +35,16 @@
 
 .abouts{
     flex-direction: row;
-
+    width: 100vw;
+    height: 29vh;
 }
 
 .about{
-    
+    padding: 15px;
     width: 25vw;
-    height: 30vh;
     color: white;
     background-color: blue;
     border: solid,#000;
 }
+
+

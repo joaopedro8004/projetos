@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.flex{
+    display: flex;
+}
+
+
+.conteiner{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgba(230, 230, 230, 0.362)
+}
+
+
+.perfil-photo img{
+    border-radius: 100px;
+    object-fit: cover;
+    max-width: 180px;
+    max-height: 180px;
+    height: 100px;
+    width: 100px;
+}
+
+.botoes{
+    align-content: center;
+    
+}
+
+.btn-header a{
+    text-decoration: none;
+    color: #333;
+}
+
+.btn-header {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-header:hover {
+    background-color: #f0f0f0;
+}
+
+.main-content{
+    margin: 50px;
+    flex-direction: row;
+    gap: 120px;
+}
+
+.main-words{
+    align-content: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
+.main-words p{
+    font-size: 20px;
+}
+.main-words h3{
+    font-size: 32px;
+}
+
+.btn-discovery a{
+    text-decoration: none;
+    color: #333;
+}
+
+.btn-discovery{
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-discovery:hover {
+    background-color: #f0f0f0;
+}

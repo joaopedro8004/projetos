@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: gainsboro;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#nav-links {
+    display: none;
+    top: 3.3vw;
+
+}
+
+#nav-links.show {
+    display: block;
+    width: 10vw;
+}
+
+#content.active{
+    padding-left: 200px;
+    padding-left: 200px;
+
+}
+
+
+.menu-icon {
+    padding: 16px;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    display: block;
+
+}
+
+.nav-links {
+    top: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    width: 10vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: none;
+    transition: left 0.3s ease;
+}
+
+.nav-links li {
+    text-align: center;
+    padding: 20px;
+}
+
+.nav-links li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    background-color: #575757;
+}
+
+#content {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.secao-sevice{
+   width: 100vw;
+   height: 100vh;
+}

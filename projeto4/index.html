@@ -10,15 +10,15 @@
 
 <body>
 
-    <nav class="navbar">
+    <nav class="header">
         <div class="menu-icon">
             <a href="javascript:void(0)" onclick="myfunction()">&#9776;</a> <!-- Icone Hamburger -->
         </div>
     </nav>
     
     <div class="secao-sevice">
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
+        <ul class="links-nav" id="links-nav">
+            <li><a href="/teste.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -26,15 +26,26 @@
     
     
         <div id="content"> <!--aqui e aonde eu vou fazer tudo--> 
-            <h1>inicio</h1>
-            <p>filtro</p>
-            <form id="formu">
-                <select name="plataforma" required="required">
-                    <option value="xbox">dia-a-dia</option>
-                    <option value="ps5">particular</option>
-                    <option value="nsw">familiar</option>
-                </select>
-            </form>
+            
+            <div style="gap: 100px;display: flex;">
+                <h1>filtro</h1>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()" class="dropbtn">filtro</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()" class="dropbtn">filtro</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

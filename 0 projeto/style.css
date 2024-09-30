@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-img {
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    object-fit: cover;
+}
+
+.seilabla {
+    margin: 0px;
+}
+
+#info-main{
+    position: absolute;
+    font-size: 38px;
+    top: 70px;
+    left: 150px;
+    
+}
+
+#info{
+    position: absolute;
+    font-size: 28px ;
+    top: 280px;
+    left: 150px;
+}
+
+.flex {
+    display: flex;
+}
+
+.abouts{
+    flex-direction: row;
+    width: 100vw;
+    height: 29vh;
+}
+
+.about{
+    padding: 15px;
+    width: 25vw;
+    color: white;
+    background-color: blue;
+    border: solid,#000;
+}
+
+

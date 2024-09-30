@@ -1,0 +1,280 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+/* Cabeçalho */
+header {
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+header h1 {
+  font-size: 1.5em;
+}
+/* Ícone do Menu Hamburger */
+.menu-icon {
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+
+/* Menu de Navegação */
+.links-nav {
+  list-style: none;
+  display: flex;
+}
+.links-nav li {
+  margin-left: 20px;
+}
+.links-nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+.links-nav li a:hover {
+  color: #ddd;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+
+  }
+  .links-nav {
+    display: none;
+
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+  }
+  .links-nav.show {
+    display: flex;
+    /* Mostra o menu quando a classe 'show' é adicionada */
+  }
+  .links-nav li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+section {
+  margin-bottom: 30px;
+}
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+}
+
+/* Dashboard de Projetos */
+.project-board {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.project {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.project h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #4CAF50;
+}
+.project-list {
+  list-style: none;
+}
+.project-list li {
+  background-color: #e2e6ea;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.done {
+  background-color: #28a745;
+  color: white;
+}
+.in-progress {
+  background-color: #ffc107;
+  color: white;
+}
+.urgent {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Formulário de Projetos */
+#add-project-form input,
+#add-project-form select,
+#add-project-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+#add-project-form button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#add-project-form button:hover {
+  background-color: #45a049;
+}
+
+/* Lista de Tarefas */
+.tasks {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.task-list {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.task-list li {
+  background-color: #e2e6ea;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.completed-task {
+  text-decoration: line-through;
+  color: gray;
+}
+.tasks input,
+.tasks button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.tasks button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 5px;
+}
+.tasks button:hover {
+  background-color: #45a049;
+}
+/* Notas Rápidas */
+.notes-section {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.notes-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.notes-section button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.notes-section button:hover {
+  background-color: #45a049;
+}
+.note {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.note button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: #dc3545;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Planejamento de Projetos Divertidos */
+.fun-projects {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.fun-projects ul {
+  list-style: none;
+}
+.fun-projects li {
+  background-color: #e2e6ea;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fun-projects button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+.fun-projects button:hover {
+  background-color: #c82333;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  .project-board {
+    flex-direction: column;
+  }
+  /* Ajustes para o menu mobile */
+  .links-nav {
+    flex-direction: column;
+  }
+}

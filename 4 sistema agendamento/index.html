@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador Diário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <!-- Ícone do Menu Hamburger -->
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+
+        <h1>Organizador Diário</h1>
+
+        <!-- Menu de Navegação -->
+        <ul class="links-nav" id="links-nav">
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#tarefas">Tarefas</a></li>
+            <li><a href="#notas">Notas</a></li>
+            <li><a href="#projetos-divertidos">Projetos Divertidos</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!-- Área de Projetos -->
+        <section id="projetos">
+            <h2>Dashboard de Projetos</h2>
+            <div class="project-board">
+                <div class="project">
+                    <h3>Finalizado</h3>
+                    <ul class="project-list" id="finalizado-list">
+                        <!-- Projetos Finalizados serão adicionados aqui -->
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Em Andamento</h3>
+                    <ul class="project-list" id="em-andamento-list">
+                        <!-- Projetos em andamento serão adicionados aqui -->
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>Urgente</h3>
+                    <ul class="project-list" id="urgente-list">
+                        <!-- Projetos urgentes serão adicionados aqui -->
+                    </ul>
+                </div>
+            </div>
+            <!-- Formulário para Adicionar Projetos -->
+            <form id="add-project-form">
+                <input type="text" id="project-name" placeholder="Nome do Projeto" required>
+                <select id="project-status" required>
+                    <option value="" disabled selected>Status do Projeto</option>
+                    <option value="Finalizado">Finalizado</option>
+                    <option value="Em Andamento">Em Andamento</option>
+                    <option value="Urgente">Urgente</option>
+                </select>
+                <button type="submit">Adicionar Projeto</button>
+            </form>
+        </section>
+
+        <!-- Lista de Tarefas -->
+        <section class="tasks" id="tarefas">
+            <h2>Lista de Tarefas</h2>
+            <ul class="task-list" id="task-list">
+                <!-- Tarefas serão adicionadas aqui -->
+            </ul>
+            <div>
+                <input type="text" id="new-task" placeholder="Nova tarefa">
+                <button onclick="addTask()">Adicionar Tarefa</button>
+            </div>
+        </section>
+
+        <!-- Notas Rápidas -->
+        <section class="notes-section" id="notas">
+            <h2>Notas Rápidas</h2>
+            <textarea id="note-area" rows="3" placeholder="Escreva uma nota aqui..."></textarea>
+            <button onclick="saveNote()">Salvar Nota</button>
+            <div id="note-list">
+                <!-- Notas serão adicionadas aqui -->
+            </div>
+        </section>
+
+        <!-- Planejamento de Projetos Divertidos -->
+        <section class="fun-projects" id="projetos-divertidos">
+            <h2>Projetos Divertidos com os Filhos</h2>
+            <ul id="fun-projects-list">
+                <!-- Projetos divertidos serão adicionados aqui -->
+            </ul>
+            <input type="text" id="new-fun-project" placeholder="Novo Projeto Divertido">
+            <button onclick="addFunProject()">Adicionar Projeto</button>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center; padding: 20px; background-color: #4CAF50; color: white;">© 2024 Organizador Diário. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

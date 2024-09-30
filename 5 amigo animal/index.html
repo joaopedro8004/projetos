@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto amigo animal</title>
+    <meta name="description" content="Clínica Veterinária Amigo Animal - Cuidando com carinho do seu melhor amigo!">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Clínica Veterinária Amigo Animal</h1>
+        <p>Cuidando com carinho do seu melhor amigo!</p>
+    </header>
+
+
+    <nav class="navegacao">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#agendar">Agendar Consulta</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+
+    <section class="banner" id="inicio">
+        <div class="banner-content">
+            <h1>Bem-vindo à Amigo Animal</h1>
+            <p>Cuidamos da saúde do seu pet com dedicação e amor.</p>
+            <a href="#agendar" class="botao-agendar" onclick="mostrarFormulario(event)">Agendar Consulta</a>
+        </div>
+    </section>
+
+
+    <section class="servicos" id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico">
+                <h3>Consulta Veterinária</h3>
+                <p>Realizamos consultas de rotina para garantir a saúde e bem-estar do seu animal.</p>
+            </div>
+            <div class="servico">
+                <h3>Vacinação</h3>
+                <p>Proteja seu pet com as vacinas essenciais para cada fase da vida.</p>
+            </div>
+            <div class="servico">
+                <h3>Banho e Tosa</h3>
+                <p>Mantenha seu amigo peludo sempre limpo e bonito com nossos serviços de banho e tosa.</p>
+            </div>
+        </div>
+
+        
+        <a href="#agendar" class="botao-agendar" onclick="mostrarFormulario(event)">Agendar Consulta</a>
+    </section>
+
+
+
+    <section id="agendar">
+        <div id="formularioContato" class="formulario-contato">
+            <h3>Agende sua Consulta</h3>
+            <form id="agendarForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer class="rodape" id="contato">
+        <p>© 2024 Clínica Veterinária Amigo Animal. Todos os direitos reservados..</p>
+        <p>
+            <a href="mailto:contato@amigoanimal.com" style="color: #ecf0f1; text-decoration: underline;">contato@amigoanimal.com</a> | 
+            <a href="tel:+5511999999999" style="color: #ecf0f1; text-decoration: underline;">(62) 99999-9999</a>
+        </p>
+        <p>
+            <a href="#" style="color: #ecf0f1; margin: 0 10px;">Facebook</a> |
+            <a href="#" style="color: #ecf0f1; margin: 0 10px;">Instagram</a>
+        </p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
